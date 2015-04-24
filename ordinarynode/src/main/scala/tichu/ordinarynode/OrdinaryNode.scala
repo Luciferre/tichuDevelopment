@@ -3,7 +3,7 @@ package tichu.ordinarynode
 import akka.actor._
 import tichu.ClientMessage._
 import tichu.SuperNodeMessage.{Invite, Join, Ready}
-import tichu.ordinarynode.InternalMessage.{Prompt, Shutdown, Subscribe}
+import tichu.ordinarynode.InternalMessage._
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -15,11 +15,16 @@ object InternalMessage {
 
   case object Prompt
 
+  case class ShowCards(cards: Array[CardInfo])
+
+  case class SpecifyHand(expectedType: Array[Int])
+
+  case class ReceiveToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
+
+
 }
 
 object CardsType{
-
-  case class Token(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
 
   case class HandInfo(num: Int, handtype: Int) extends Serializable
 
@@ -28,7 +33,8 @@ object CardsType{
 
 class OrdinaryNode(name: String) extends Actor with ActorLogging {
   val subscribers = collection.mutable.MutableList[ActorRef]()
-
+  val NUM_OF_PLAYERS = 4
+  val NUM_OF_CARDS = 52
   /**
    * Join a supernode and identify yourself with it.
    * @param hostname resolvable address of the supernode, must exactly match the config of the supernode
@@ -79,6 +85,8 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       subscribers.foreach(_ ! Invite(players))
   }
 
+  var receivedToken = new SendToken(NUM_OF_PLAYERS - 1, Array[Array[CardInfo]]())
+
   def matched(superNode: ActorRef): Receive = {
     case Accept() => superNode ! Accept()
     case Ready(players) => log.info("match with {}", players)
@@ -86,21 +94,44 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     /*
       receive the initial set of cards from leader
      */
-    case HandCards(cards) => {
+    case DistributeHandCards(cards) => {
       myCards = cards
       subscribers.foreach(_ ! ShowCards(myCards))
       if(findFirstPlayer(cards))
-        sortedPlayers(0) ! PlayFirst()
+        sortedPlayers(0) ! PlayFirst(self)
     }
-    case PlayFirst() =>
-      sender() ! SendToken()
+    case PlayFirst(sender) =>
+      log.debug("First Player: {}", sender)
+      sender ! GameStart()
       log.debug("Playing!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
+    case GameStart => log.debug("Phase start!")
+      subscribers.foreach(_ ! SpecifyHand(Array(0,0)))
+
+    case SendCards(cards) => log.debug("Phase end!")
+      if(cards.length == 0)
+        nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
+      else {
+        val new_cumulative_hand = receivedToken.cumulative_hand :+ cards
+        nextActorRef ! SendToken(receivedToken.ttl, new_cumulative_hand)
+      }
+
+    /*
+    receive a token from another player
+   */
+    case SendToken(ttl, cumulative_hand) => {
+      if(ttl == 0)
+        receivedToken = new SendToken(NUM_OF_PLAYERS - 1, Array[Array[CardInfo]]())
+      else
+        receivedToken = new SendToken(ttl, cumulative_hand)
+      subscribers.foreach(_ ! ReceiveToken(ttl, cumulative_hand))
+
+    }
+
   }
 
   var isLeader = false
   var nextActorRef: ActorRef = _
-  val NUM_OF_PLAYERS = 4
-  val NUM_OF_CARDS = 52
   val handType = Array(
     "anytype",
     "a single card",
@@ -110,7 +141,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     "a full house",
     "a run of pairs",
     "a bomb(four of a kind)",
-    "a bomb(straignt flush"
+    "a bomb(straignt flush)"
   )
   val colorType = Array(
     "Jack", "Sword", "Pagoda", "Star"
@@ -133,15 +164,6 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
 
     if (isLeader) {
       distributeCards()
-
-      //val toSend = specifyHand(Array(0, 0))
-
-
-//      // get the next player's information from address book
-//      val nextPlayerAddress = getNextPlayerInfo(OrdinaryNode.myRole)
-//      // send a token to the next player
-//      val token = new Token(NUM_OF_PLAYERS - 1, Array(toSend))
-//      sendMessage(nextPlayerAddress(0), nextPlayerAddress(1), nextPlayerAddress(2), token)
     }
   }
   def distributeCards() = {
@@ -150,8 +172,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
 
     for (i <- 0 until NUM_OF_PLAYERS) {
       val cards = getNthUserCards(allCards, i)
-      val toSend = new HandCards(cards)
-      sortedPlayers(i) ! toSend
+      sortedPlayers(i) ! DistributeHandCards(cards)
     }
 
   }
@@ -209,5 +230,6 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     }
     return false
   }
+
 
 }

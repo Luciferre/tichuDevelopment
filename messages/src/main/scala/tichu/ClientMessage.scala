@@ -1,5 +1,7 @@
 package tichu
 
+import akka.actor.ActorRef
+
 
 object ClientMessage {
 
@@ -9,11 +11,15 @@ object ClientMessage {
 
   final case class CardInfo(num: Int, color: Int) extends Serializable
 
-  final case class HandCards(cards: Array[CardInfo]) extends Serializable
+  final case class DistributeHandCards(cards: Array[CardInfo]) extends Serializable
 
-  final case class ShowCards(cards: Array[CardInfo])
+  final case class PlayFirst(sender: ActorRef)
 
-  final case class PlayFirst()
+  final case class SendCards(cards: Array[CardInfo])
 
-  final case class SendToken()
+  final case class GameStart()
+
+  final case class SendToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
+
+
 }
