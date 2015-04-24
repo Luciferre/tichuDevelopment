@@ -1,7 +1,7 @@
 package tichu.ordinarynode
 
 import akka.actor._
-import tichu.ClientMessage.{Accept, SearchingMatch, HandCards, CardInfo, ShowCards}
+import tichu.ClientMessage._
 import tichu.SuperNodeMessage.{Invite, Join, Ready}
 import tichu.ordinarynode.InternalMessage.{Prompt, Shutdown, Subscribe}
 
@@ -89,7 +89,12 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     case HandCards(cards) => {
       myCards = cards
       subscribers.foreach(_ ! ShowCards(myCards))
+      if(findFirstPlayer(cards))
+        sortedPlayers(0) ! PlayFirst()
     }
+    case PlayFirst() =>
+      sender() ! SendToken()
+      log.debug("Playing!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
   }
 
   var isLeader = false
@@ -112,9 +117,9 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
   )
 
   var myCards = new Array[CardInfo](13)
-
+  var sortedPlayers: List[ActorRef] = _
   def electLeader(players: Seq[ActorRef]) {
-    val sortedPlayers = players.toList.sortWith(_.hashCode < _.hashCode) //sort the four ActorRef by hashCode
+    sortedPlayers = players.toList.sortWith(_.hashCode < _.hashCode) //sort the four ActorRef by hashCode
     if (self.hashCode == sortedPlayers(0).hashCode())
       isLeader = true //check whether the ON is leader
     var next = 0
@@ -127,16 +132,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     log.debug("nextActor: {}", nextActorRef)
 
     if (isLeader) {
-      //if the ON is leader, shuffle the cards and distribute cards
-      val allCards = shuffleCards(getAFullSetOfCards())
-      myCards = getNthUserCards(allCards, 0)
-      subscribers.foreach(_ ! ShowCards(myCards))
-
-      for (i <- 1 until NUM_OF_PLAYERS) {
-          val cards = getNthUserCards(allCards, i)
-          val toSend = new HandCards(cards)
-          sortedPlayers(i) ! toSend
-      }
+      distributeCards()
 
       //val toSend = specifyHand(Array(0, 0))
 
@@ -147,6 +143,17 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
 //      val token = new Token(NUM_OF_PLAYERS - 1, Array(toSend))
 //      sendMessage(nextPlayerAddress(0), nextPlayerAddress(1), nextPlayerAddress(2), token)
     }
+  }
+  def distributeCards() = {
+    //if the ON is leader, shuffle the cards and distribute cards
+    val allCards = shuffleCards(getAFullSetOfCards())
+
+    for (i <- 0 until NUM_OF_PLAYERS) {
+      val cards = getNthUserCards(allCards, i)
+      val toSend = new HandCards(cards)
+      sortedPlayers(i) ! toSend
+    }
+
   }
 
   def getAFullSetOfCards(): Array[CardInfo] = {
@@ -195,5 +202,12 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     return hand.toArray
   }
 
+  def findFirstPlayer(cards: Array[CardInfo]): Boolean = {
+    for (i <- 0 until cards.length){
+      if(cards(i).num == 3 && cards(i).color == 3)
+        return true
+    }
+    return false
+  }
 
 }

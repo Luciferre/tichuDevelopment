@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/Luciferre/Downloads/tichu/}messages...
+[info] Updating {file:/Users/Luciferre/Downloads/tichuDevelopment/}messages...
 [debug] :: resolving dependencies :: edu.cmu.ece#tichu-messages_2.11;0.0.alpha1
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile]
 [debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@168b3a87
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4de4db44
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6
 [debug] 	found org.scala-lang#scala-library;2.11.6 in sbt-chain
 [debug] 	[2.11.6] org.scala-lang#scala-library;2.11.6
@@ -36,8 +36,14 @@
 [debug] 		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom
 [debug] 	Akka Snapshot Repository: found md file for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
 [debug] 		=> http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom (2.4-SNAPSHOT)
-[debug] 	default-cache: revision in cache (not updated): com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
-[debug] 	found com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT in sbt-chain
+[debug] 	default-cache: revision in cache is not up to date: com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
+[debug] downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom ...
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom.sha1
+[debug] sha1 OK for http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT!akka-actor_2.11.pom(pom.original) (389ms)
+[debug] com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT has changed: deleting old artifacts
+[debug] 	found com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT in Akka Snapshot Repository
 [debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
 [debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
 [debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
@@ -80,8 +86,14 @@
 [debug] 		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom
 [debug] 	Akka Snapshot Repository: found md file for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
 [debug] 		=> http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom (2.4-SNAPSHOT)
-[debug] 	default-cache: revision in cache (not updated): com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
-[debug] 	found com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT in sbt-chain
+[debug] 	default-cache: revision in cache is not up to date: com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
+[debug] downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom ...
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom.sha1
+[debug] sha1 OK for http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom
+[debug] 	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT!akka-remote_2.11.pom(pom.original) (413ms)
+[debug] com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT has changed: deleting old artifacts
+[debug] 	found com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT in Akka Snapshot Repository
 [debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
 [debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
 [debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
@@ -501,8 +513,20 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT!akka-actor_2.11.jar
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT!akka-remote_2.11.jar
+[debug] 	maven-metadata not available: http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml
+[debug] 		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.jar
+[info] downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.jar ...
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.jar
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.jar.sha1
+[debug] sha1 OK for http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.jar
+[info] 	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT!akka-actor_2.11.jar (4013ms)
+[debug] 	maven-metadata not available: http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml
+[debug] 		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.jar
+[info] downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.jar ...
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.jar
+[debug] 	Akka Snapshot Repository: downloading http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.jar.sha1
+[debug] sha1 OK for http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.jar
+[info] 	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT!akka-remote_2.11.jar (1376ms)
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
 [debug] 	[NOT REQUIRED] io.netty#netty;3.8.0.Final!netty.jar(bundle)
 [debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(bundle)
@@ -512,19 +536,19 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
-[debug] :: resolution report :: resolve 1574ms :: artifacts dl 23ms
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 compile produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-compile.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 runtime produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-runtime.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 test produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-test.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 provided produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-provided.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 optional produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-optional.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 compile-internal produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-compile-internal.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 runtime-internal produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-runtime-internal.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 test-internal produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-test-internal.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 plugin produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-plugin.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 sources produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-sources.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 docs produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-docs.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 pom produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-pom.xml
-[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 scala-tool produced in /Users/Luciferre/Downloads/tichu/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-scala-tool.xml
-[debug] 	resolve done (1574ms resolve - 23ms download)
+[debug] :: resolution report :: resolve 2602ms :: artifacts dl 5400ms
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 compile produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-compile.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 runtime produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-runtime.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 test produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-test.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 provided produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-provided.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 optional produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-optional.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 compile-internal produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-compile-internal.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 runtime-internal produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-runtime-internal.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 test-internal produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-test-internal.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 plugin produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-plugin.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 sources produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-sources.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 docs produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-docs.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 pom produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-pom.xml
+[debug] 	report for edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 scala-tool produced in /Users/Luciferre/Downloads/tichuDevelopment/messages/target/resolution-cache/reports/edu.cmu.ece-tichu-messages_2.11-scala-tool.xml
+[debug] 	resolve done (2602ms resolve - 5400ms download)
 [info] Done updating.

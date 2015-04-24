@@ -7,10 +7,10 @@
 		revision="0.0.alpha1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150423131928"/>
+		date="20150424010617"/>
 	<dependencies>
 		<module organisation="edu.cmu.ece" name="tichu-messages_2.11">
-			<revision name="0.0.alpha1" status="integration" pubdate="20150423131928" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
+			<revision name="0.0.alpha1" status="integration" pubdate="20150424010617" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="edu.cmu.ece" name="tichu-ordinary-node_2.11" conf="optional, compile, provided, compile-internal" rev="0.0.alpha1" rev-constraint-default="0.0.alpha1" rev-constraint-dynamic="0.0.alpha1" callerrev="0.0.alpha1"/>
 				<artifacts>
@@ -18,13 +18,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-remote_2.11">
-			<revision name="2.4-SNAPSHOT" status="integration" pubdate="20150422181237" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+			<revision name="2.4-SNAPSHOT" status="integration" pubdate="20150423171155" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="4">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="3854" time="0" location="/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/ivy-2.4-SNAPSHOT.xml" searched="true" origin-is-local="false" origin-location="http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom"/>
 				<caller organisation="edu.cmu.ece" name="tichu-messages_2.11" conf="compile" rev="2.4-SNAPSHOT" rev-constraint-default="2.4-SNAPSHOT" rev-constraint-dynamic="2.4-SNAPSHOT" callerrev="0.0.alpha1"/>
 				<caller organisation="edu.cmu.ece" name="tichu-ordinary-node_2.11" conf="optional, compile, provided, compile-internal" rev="2.4-SNAPSHOT" rev-constraint-default="2.4-SNAPSHOT" rev-constraint-dynamic="2.4-SNAPSHOT" callerrev="0.0.alpha1"/>
 				<artifacts>
-					<artifact name="akka-remote_2.11" type="jar" ext="jar" status="no" details="" size="1343000" time="0" location="/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.4-SNAPSHOT.jar">
+					<artifact name="akka-remote_2.11" type="jar" ext="jar" status="no" details="" size="1346142" time="0" location="/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/jars/akka-remote_2.11-2.4-SNAPSHOT.jar">
 						<origin-location is-local="false" location="http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.jar"/>
 					</artifact>
 				</artifacts>
@@ -67,14 +67,14 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
-			<revision name="2.4-SNAPSHOT" status="integration" pubdate="20150422181201" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, compile(*), runtime, runtime(*), master(compile), master" position="2">
+			<revision name="2.4-SNAPSHOT" status="integration" pubdate="20150423171118" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, compile(*), runtime, runtime(*), master(compile), master" position="2">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2677" time="0" location="/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.4-SNAPSHOT.xml" searched="true" origin-is-local="false" origin-location="http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom"/>
 				<caller organisation="edu.cmu.ece" name="tichu-messages_2.11" conf="compile" rev="2.4-SNAPSHOT" rev-constraint-default="2.4-SNAPSHOT" rev-constraint-dynamic="2.4-SNAPSHOT" callerrev="0.0.alpha1"/>
 				<caller organisation="edu.cmu.ece" name="tichu-ordinary-node_2.11" conf="optional, compile, provided, compile-internal" rev="2.4-SNAPSHOT" rev-constraint-default="2.4-SNAPSHOT" rev-constraint-dynamic="2.4-SNAPSHOT" callerrev="0.0.alpha1"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="default, compile, runtime, master" rev="2.4-SNAPSHOT" rev-constraint-default="2.4-SNAPSHOT" rev-constraint-dynamic="2.4-SNAPSHOT" callerrev="2.4-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2709966" time="0" location="/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4-SNAPSHOT.jar">
+					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2710311" time="0" location="/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4-SNAPSHOT.jar">
 						<origin-location is-local="false" location="http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.jar"/>
 					</artifact>
 				</artifacts>

@@ -1,8 +1,8 @@
 [0m[[0minfo[0m] [0mRunning tichu.ordinarynode.ConsoleClient [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/Users/Luciferre/Downloads/tichu/ordinarynode/target/scala-2.11/classes[0m
-[0m[[0mdebug[0m] [0m	/Users/Luciferre/Downloads/tichu/messages/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/Luciferre/Downloads/tichuDevelopment/messages/target/scala-2.11/classes[0m
 [0m[[0mdebug[0m] [0m	/Users/Luciferre/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Luciferre/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4-SNAPSHOT.jar[0m
 [0m[[0mdebug[0m] [0m	/Users/Luciferre/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar[0m
