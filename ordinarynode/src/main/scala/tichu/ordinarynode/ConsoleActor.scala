@@ -101,6 +101,7 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
   }
 
   def showCards(cards: Array[CardInfo]): Unit = {
+    myCards = cards
     println(">> You have " + cards.length + " cards available")
     for (i <- 0 until cards.length) {
       println("Card #" + i + "; Number is " + cards(i).num + "\t; Color is " + colorType(cards(i).color)) //+ colorType(cards(i).color))

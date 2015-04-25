@@ -105,7 +105,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       sender ! GameStart()
       log.debug("Playing!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
-    case GameStart => log.debug("Phase start!")
+    case GameStart() => log.debug("Phase start!")
       subscribers.foreach(_ ! SpecifyHand(Array(0,0)))
 
     case SendCards(cards) => log.debug("Phase end!")
