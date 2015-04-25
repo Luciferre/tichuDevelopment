@@ -90,7 +90,6 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
         case _ => println( """Unknown command. Type 'help' for a list of commands.""")
       }
     }
-
     self ! Prompt
   }
 
