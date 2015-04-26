@@ -4,8 +4,8 @@ import java.nio.file.{Files, Paths}
 
 import akka.actor._
 import com.typesafe.config.ConfigFactory
-import tichu.ClientMessage.{Accept, SearchingMatch,ForwardGameOver}
-import tichu.SuperNodeMessage.{Join, PlayerRequest,GameOver}
+import tichu.ClientMessage.{Accept, SearchingMatch,ForwardGameOver,ForwardToken}
+import tichu.SuperNodeMessage.{Join, PlayerRequest,GameOver,SNForwardToken, MultiCast}
 import tichu.supernode.MatchBroker.{Accepted, AddPlayer, RequestPlayers}
 
 import scala.collection.mutable
@@ -59,6 +59,7 @@ class SuperNode(hostname: String, port: String) extends Actor with ActorLogging 
   }
 
   def receive = {
+    case ForwardToken(ttl, cumulative_hand, actor) => actor ! SNForwardToken(ttl, cumulative_hand)
     case ForwardGameOver(actor) => actor ! GameOver()
     case Join(name) => addNode(name, sender())
     case ActorIdentity(host: String, Some(actorRef)) => addPeer(host, actorRef)

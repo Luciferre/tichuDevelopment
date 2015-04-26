@@ -19,5 +19,6 @@ object SuperNodeMessage {
 
   final case class MultiCast(cards: Array[CardInfo], players: Seq[ActorRef])
 
+  final case class SNForwardToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
 
 }

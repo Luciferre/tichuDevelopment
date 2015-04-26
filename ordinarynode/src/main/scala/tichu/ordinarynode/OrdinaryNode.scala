@@ -3,7 +3,7 @@ package tichu.ordinarynode
 import akka.actor._
 import tichu.ClientMessage._
 
-import tichu.SuperNodeMessage.{Invite, Join, Ready, GameOver, MultiCast}
+import tichu.SuperNodeMessage.{Invite, Join, Ready, GameOver, MultiCast,SNForwardToken}
 
 import tichu.ordinarynode.InternalMessage._
 
@@ -116,10 +116,10 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     /* Receive the cards user will play, send it to next player within token */
     case SendCards(cards) =>
       if (cards.length == 0)
-        nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
+        superNode ! ForwardToken(receivedToken.ttl - 1, receivedToken.cumulative_hand,nextActorRef)
       else {
         val new_cumulative_hand = receivedToken.cumulative_hand :+ cards
-        nextActorRef ! SendToken(receivedToken.ttl, new_cumulative_hand)
+        superNode ! ForwardToken(receivedToken.ttl, new_cumulative_hand,nextActorRef)
       }
       multiCast(superNode, cards, allPlayers)
 
@@ -137,7 +137,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     /*
     receive a token from another player
    */
-    case SendToken(ttl, cumulative_hand) => {
+    case SNForwardToken(ttl, cumulative_hand) => {
       if(ttl == 0)
         receivedToken = new SendToken(NUM_OF_PLAYERS - 1, Array[Array[CardInfo]]())
       else

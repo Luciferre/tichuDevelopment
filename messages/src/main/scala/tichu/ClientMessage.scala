@@ -23,4 +23,6 @@ object ClientMessage {
 
   final case class ForwardGameOver(actor: ActorRef)
 
+  final case class ForwardToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]], actor:ActorRef) extends Serializable
+
 }

@@ -51,3 +51,10 @@ project supernode
 project ordinarynode
 project supernode
 >>>>>>> dc524de8b94a10b232c510ec66325e558381e4eb
+project supernode
+project ordinarynode
+sbt
+project ordinarynode
+run
+projects
+project supernode

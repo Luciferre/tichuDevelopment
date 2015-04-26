@@ -5,3 +5,9 @@ join 127.0.0.1
 run
 rnu
 run
+sbt
+run
+d
+pass
+d
+run

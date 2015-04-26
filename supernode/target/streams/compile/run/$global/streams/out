@@ -14,8 +14,4 @@
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mWaiting for thread RemoteSystem-akka.actor.default-dispatcher-2 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread RemoteSystem-akka.actor.default-dispatcher-2 exited.[0m
-<<<<<<< HEAD
-[0m[[0mdebug[0m] [0mWaiting for thread RemoteSystem-scheduler-1 to terminate.[0m
-=======
-[0m[[0mdebug[0m] [0mWaiting for thread New I/O server boss #6 to terminate.[0m
->>>>>>> dc524de8b94a10b232c510ec66325e558381e4eb
+[0m[[0mdebug[0m] [0mWaiting for thread New I/O worker #2 to terminate.[0m
