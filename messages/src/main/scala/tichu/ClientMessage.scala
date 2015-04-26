@@ -21,5 +21,4 @@ object ClientMessage {
 
   final case class SendToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
 
-
 }

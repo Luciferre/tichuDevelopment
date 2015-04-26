@@ -2,7 +2,7 @@ package tichu.ordinarynode
 
 import akka.actor._
 import tichu.ClientMessage._
-import tichu.SuperNodeMessage.{Invite, Join, Ready}
+import tichu.SuperNodeMessage.{MultiCast, Invite, Join, Ready}
 import tichu.ordinarynode.InternalMessage._
 
 import scala.collection.mutable.ArrayBuffer
@@ -17,7 +17,7 @@ object InternalMessage {
 
   case class ShowCards(cards: Array[CardInfo])
 
-  case class SpecifyHand(expectedType: Array[Int])
+  case class SpecifyHand(expectedType: Array[Int], ttl: Boolean)
 
   case class ReceiveToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
 
@@ -86,18 +86,19 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
   }
 
   var receivedToken = new SendToken(NUM_OF_PLAYERS - 1, Array[Array[CardInfo]]())
-
+  var allPlayers: Seq[ActorRef] = _
   def matched(superNode: ActorRef): Receive = {
     case Accept() => superNode ! Accept()
     case Ready(players) => log.info("match with {}", players)
       electLeader(players)
+      allPlayers = players
     /*
       receive the initial set of cards from leader
      */
     case DistributeHandCards(cards) => {
       myCards = cards
       subscribers.foreach(_ ! ShowCards(myCards))
-      if(findFirstPlayer(cards))
+      if (findFirstPlayer(cards))
         sortedPlayers(0) ! PlayFirst(self)
     }
     case PlayFirst(sender) =>
@@ -106,15 +107,16 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       log.debug("Playing!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
     case GameStart() => log.debug("Phase start!")
-      subscribers.foreach(_ ! SpecifyHand(Array(0,0)))
+      subscribers.foreach(_ ! SpecifyHand(Array(0, 0), true))
 
     case SendCards(cards) => log.debug("Phase end!")
-      if(cards.length == 0)
-        nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
+      if (cards.length == 0)
+      nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
       else {
         val new_cumulative_hand = receivedToken.cumulative_hand :+ cards
         nextActorRef ! SendToken(receivedToken.ttl, new_cumulative_hand)
       }
+      MultiCast(cards, allPlayers)
 
     /*
     receive a token from another player
@@ -127,7 +129,8 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       subscribers.foreach(_ ! ReceiveToken(ttl, cumulative_hand))
 
     }
-
+    case MultiCast(cards, actors) =>
+      subscribers.foreach(_ ! MultiCast(cards, actors))
   }
 
   var isLeader = false
@@ -242,6 +245,5 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     }
     return false
   }
-
 
 }
