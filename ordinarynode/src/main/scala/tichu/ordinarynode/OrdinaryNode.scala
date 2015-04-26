@@ -2,7 +2,9 @@ package tichu.ordinarynode
 
 import akka.actor._
 import tichu.ClientMessage._
-import tichu.SuperNodeMessage.{Invite, Join, Ready, GameOver}
+
+import tichu.SuperNodeMessage.{Invite, Join, Ready, GameOver, MultiCast}
+
 import tichu.ordinarynode.InternalMessage._
 
 import scala.collection.mutable.ArrayBuffer
@@ -19,7 +21,7 @@ object InternalMessage {
 
   case class ShowCards(cards: Array[CardInfo])
 
-  case class SpecifyHand(expectedType: Array[Int])
+  case class SpecifyHand(expectedType: Array[Int], ttl: Boolean)
 
   case class ReceiveToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
 
@@ -89,36 +91,37 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
   }
 
   var receivedToken = new SendToken(NUM_OF_PLAYERS - 1, Array[Array[CardInfo]]())
-
+  var allPlayers: Seq[ActorRef] = _
   def matched(superNode: ActorRef): Receive = {
     case Accept() => superNode ! Accept()
     case Ready(players) => log.info("match with {}", players)
       electLeader(players)
+      allPlayers = players
     /*
       receive the initial set of cards from leader
      */
     case DistributeHandCards(cards) => {
       myCards = cards
       subscribers.foreach(_ ! ShowCards(myCards))
-      if(findFirstPlayer(cards))
+      if (findFirstPlayer(cards))
         sortedPlayers(0) ! PlayFirst(self)
     }
     case PlayFirst(sender) =>
-      log.debug("First Player: {}", sender)
       sender ! GameStart()
-      log.debug("Playing!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
-    case GameStart() => log.debug("Phase start!")
-      subscribers.foreach(_ ! SpecifyHand(Array(0,0)))
+    case GameStart() =>
+      subscribers.foreach(_ ! SpecifyHand(Array(0, 0), true))
+
 
     /* Receive the cards user will play, send it to next player within token */
-    case SendCards(cards) => log.debug("Phase end!")
-      if(cards.length == 0)
+    case SendCards(cards) =>
+      if (cards.length == 0)
         nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
       else {
         val new_cumulative_hand = receivedToken.cumulative_hand :+ cards
         nextActorRef ! SendToken(receivedToken.ttl, new_cumulative_hand)
       }
+      multiCast(superNode, cards, allPlayers)
 
     /* Player finish multicast */
     case NotifyFinish() =>
@@ -142,7 +145,8 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       subscribers.foreach(_ ! ReceiveToken(ttl, cumulative_hand))
 
     }
-
+    case MultiCast(cards, actors) =>
+      subscribers.foreach(_ ! MultiCast(cards, actors))
   }
 
   var isLeader = false
@@ -173,9 +177,6 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       if (sortedPlayers(i).hashCode() == self.hashCode)
         next = (i + 1) % NUM_OF_PLAYERS
     nextActorRef = sortedPlayers(next) //find the next one who should receive token ring
-    log.debug("localActor: {}", self)
-    log.debug("isLeader: {}", isLeader)
-    log.debug("nextActor: {}", nextActorRef)
 
     if (isLeader) {
       distributeCards()
@@ -200,15 +201,14 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
   def getAFullSetOfCards(): Array[CardInfo] = {
     //initialize deck
     var hand = new ArrayBuffer[CardInfo]()
-    for (i <- 0 to 12) {
+    for (i <- 1 to 13) {
       // different number
       for (j <- 0 to 3) {
         // different color
         hand += new CardInfo(i, j)
       }
     }
-    val ret = hand.toArray
-    return ret
+    hand.toArray
   }
 
   /**
@@ -232,7 +232,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     for (i <- 0 until size) {
       shuffled(i) = cards(indexAfter(i))
     }
-    return shuffled
+    shuffled
   }
 
   /**
@@ -247,7 +247,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     for (i <- n until cards.length by 4) {
       hand += cards(i)
     }
-    return hand.toArray
+    hand.toArray
   }
 
   def findFirstPlayer(cards: Array[CardInfo]): Boolean = {
@@ -255,9 +255,17 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       if(cards(i).num == 3 && cards(i).color == 3)
         return true
     }
-    return false
+    false
   }
 
 
+  /**
+   * Multicast the specified cards to other players
+   * @param cards
+   * @return
+   */
+  def multiCast(superNode: ActorRef, cards: Array[CardInfo], actors: Seq[ActorRef]): Unit ={
+    superNode ! MultiCast(cards, actors)
+  }
 }
 

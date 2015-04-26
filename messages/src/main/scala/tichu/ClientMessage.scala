@@ -23,5 +23,4 @@ object ClientMessage {
 
   final case class ForwardGameOver(actor: ActorRef)
 
-
 }

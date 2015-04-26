@@ -2,7 +2,9 @@ package tichu.ordinarynode
 
 import akka.actor.{Actor, ActorLogging, ActorRef, Terminated}
 import tichu.ClientMessage._
-import tichu.SuperNodeMessage.{Join, Invite, GameOver}
+
+import tichu.SuperNodeMessage.{Join, Invite, GameOver,MultiCast}
+
 import tichu.ordinarynode.InternalMessage._
 import tichu.ordinarynode.CardsType.{HandInfo, Cards}
 
@@ -40,9 +42,13 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
     case Terminated => quit()
     case Invite(players) => matchInvite(players)
     case ShowCards(cards) => showCards(cards)
-    case SpecifyHand(array) => specifyHand(array)
+    case SpecifyHand(array, isFirst) => specifyHand(array, isFirst)
     case ReceiveToken(ttl, cumulative_hand) => receiveToken(ttl, cumulative_hand)
+
     case GameOver() => println("[Sorry Game Over]  GameOver, you lose")
+
+    case MultiCast(cards, actors) => receiveMulticast(cards)
+
   }
 
   def prompt() = {
@@ -119,9 +125,8 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
    * @param expectedType
    * @return
    */
-  def specifyHand(expectedType: Array[Int]) = {
+  def specifyHand(expectedType: Array[Int], isFirst: Boolean) = {
     println("The expected card type is: " + handType(expectedType(1)))
-    println("You have the following available cards: ")
     if (expectedType(0) == 0) {
       println("You can pick any card")
     } else {
@@ -154,8 +159,14 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
         if (ipt == "done") {
           cond = false
         } else if (ipt == "pass") {
-          cond = false
-          isPass = true
+          if(!isFirst) {
+            cond = false
+            isPass = true
+          }
+          else{
+            println("You are the first one to play, you cannot pass, please specify card: ")
+
+          }
         } else if (ipt == "help") {
           println(
             """The following commands are available:
@@ -339,11 +350,11 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
      1 if hand0 > hand1
      */
     def compareHand(hand0: HandInfo, hand1: HandInfo): Int = {
-      if (hand0.handtype != hand1.handtype) return -2
+      if (hand0.handtype != hand1.handtype) -2
       else {
-        if (hand0.num > hand1.num) return 1
-        else if (hand0.num == hand1.num) return 0
-        else return -1
+        if (hand0.num > hand1.num) 1
+        else if (hand0.num == hand1.num) 0
+        else -1
       }
     }
 
@@ -351,19 +362,26 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
       def compare(a: CardInfo, b: CardInfo) = a.num compare b.num
     }
     Sorting.quickSort(hand)(CardOrdering)
-    return hand
+    hand
   }
 
+  /**
+   * Receive the token ring from last player, start my phase
+   * @param ttl
+   * @param cumulative_hand
+   * @return
+   */
   def receiveToken(ttl: Int, cumulative_hand: Array[Array[CardInfo]]) = {
     
 
     // ttl == 0 means all other players have passed. it is my turn again
+    println("Your phase start!")
     if (ttl == 0) {
       // todo: add score to my current scores, and inform the GUI of this message
       println("GREAT, all your opposites passed your hand, it's your turn again!")
       // wait for user to specify a hand of cards
       // create a token
-      specifyHand(Array(0, 0))
+        specifyHand(Array(0, 0), true)
 
     } else {
       // display the token first,
@@ -373,8 +391,20 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
       // the previous hand is the last entry in cumulative hand
       val prev_hand = cumulative_hand(cumulative_hand.length - 1)
       // prompt the user to specify a hand that meet the demand
-      specifyHand(getHandType(prev_hand))
+        specifyHand(getHandType(prev_hand), false)
 
     }
+    println("Your phase end!")
+  }
+  /**
+   * Receive Multicast message from other players, and display their cards
+   * @param cards
+   * @return
+   */
+  def receiveMulticast(cards: Array[CardInfo]): Unit ={
+    if(cards.length == 0)
+      println("The player passes his/her phase.")
+    else
+      println("The player plays " + cards)
   }
 }

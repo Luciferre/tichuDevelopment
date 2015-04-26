@@ -1,6 +1,7 @@
 package tichu
 
 import akka.actor.{ActorPath, ActorRef}
+import tichu.ClientMessage.CardInfo
 
 object SuperNodeMessage {
 
@@ -15,5 +16,8 @@ object SuperNodeMessage {
   final case class AvailablePlayers(request: (ActorPath, Int), players: Seq[ActorRef])
 
   final case class GameOver()
+
+  final case class MultiCast(cards: Array[CardInfo], players: Seq[ActorRef])
+
 
 }
