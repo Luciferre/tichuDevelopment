@@ -2,7 +2,7 @@ package tichu.ordinarynode
 
 import akka.actor.{Actor, ActorLogging, ActorRef, Terminated}
 import tichu.ClientMessage._
-import tichu.SuperNodeMessage.{Join, Invite}
+import tichu.SuperNodeMessage.{Join, Invite, GameOver}
 import tichu.ordinarynode.InternalMessage._
 import tichu.ordinarynode.CardsType.{HandInfo, Cards}
 
@@ -42,6 +42,7 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
     case ShowCards(cards) => showCards(cards)
     case SpecifyHand(array) => specifyHand(array)
     case ReceiveToken(ttl, cumulative_hand) => receiveToken(ttl, cumulative_hand)
+    case GameOver() => println("[Sorry Game Over]  GameOver, you lose")
   }
 
   def prompt() = {
@@ -134,6 +135,15 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
     // return any type of hands, as long as it is legal
     var notReady = true // loop control
     var isPass = false // loop control
+   
+    //Check if player has no hand cards, it will pass automatically,
+    //Pass the token to next one automatically
+    /*
+    if (myCards.length == 0) {
+      notReady = false
+      isPass = true
+    }*/
+    
     while (notReady) {
       hand.clear()
       indexes.clear()
@@ -179,7 +189,10 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
           }
         }
       }
+      else
+        notReady = false
     }
+
     val toSend = new ArrayBuffer[CardInfo]()
     // if the user decided to pass, return null. else return the cards specified
     if (isPass)
@@ -203,8 +216,16 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
       myCards = remaining.toArray
       println("I have these cards remaining in hand:")
       showCards(myCards)
-      // convert to array, sort, and return
-      node ! SendCards(toSend.toArray)
+
+      /*Simplify the Game, if one player finish all cards,
+        Game will finish */
+      if (myCards.length == 0) {
+        println("Congratulations!  You win")
+        node ! NotifyFinish()
+      } else {
+        // convert to array, sort, and return
+        node ! SendCards(toSend.toArray)
+      }  
     }
   }
 
@@ -334,6 +355,8 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
   }
 
   def receiveToken(ttl: Int, cumulative_hand: Array[Array[CardInfo]]) = {
+    
+
     // ttl == 0 means all other players have passed. it is my turn again
     if (ttl == 0) {
       // todo: add score to my current scores, and inform the GUI of this message

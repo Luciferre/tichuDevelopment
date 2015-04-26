@@ -2,7 +2,7 @@ package tichu.ordinarynode
 
 import akka.actor._
 import tichu.ClientMessage._
-import tichu.SuperNodeMessage.{Invite, Join, Ready}
+import tichu.SuperNodeMessage.{Invite, Join, Ready, GameOver}
 import tichu.ordinarynode.InternalMessage._
 
 import scala.collection.mutable.ArrayBuffer
@@ -13,6 +13,8 @@ object InternalMessage {
 
   case class Subscribe(actor: ActorRef)
 
+  case class NotifyFinish()
+
   case object Prompt
 
   case class ShowCards(cards: Array[CardInfo])
@@ -20,7 +22,6 @@ object InternalMessage {
   case class SpecifyHand(expectedType: Array[Int])
 
   case class ReceiveToken(var ttl: Int, var cumulative_hand: Array[Array[CardInfo]]) extends Serializable
-
 
 }
 
@@ -31,10 +32,12 @@ object CardsType{
   case class Cards(cards: Array[CardInfo]) extends Serializable
 }
 
+
 class OrdinaryNode(name: String) extends Actor with ActorLogging {
   val subscribers = collection.mutable.MutableList[ActorRef]()
   val NUM_OF_PLAYERS = 4
   val NUM_OF_CARDS = 52
+  
   /**
    * Join a supernode and identify yourself with it.
    * @param hostname resolvable address of the supernode, must exactly match the config of the supernode
@@ -108,6 +111,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     case GameStart() => log.debug("Phase start!")
       subscribers.foreach(_ ! SpecifyHand(Array(0,0)))
 
+    /* Receive the cards user will play, send it to next player within token */
     case SendCards(cards) => log.debug("Phase end!")
       if(cards.length == 0)
         nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
@@ -115,6 +119,17 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
         val new_cumulative_hand = receivedToken.cumulative_hand :+ cards
         nextActorRef ! SendToken(receivedToken.ttl, new_cumulative_hand)
       }
+
+    /* Player finish multicast */
+    case NotifyFinish() =>
+      for (i <- 0 to 3) {
+        val actor = sortedPlayers(i)
+        if (actor.hashCode() != self.hashCode){
+          superNode ! ForwardGameOver(actor)
+        }
+      }
+      
+    case GameOver() => subscribers.foreach(_ ! GameOver())
 
     /*
     receive a token from another player
@@ -245,3 +260,4 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
 
 
 }
+

@@ -14,4 +14,6 @@ object SuperNodeMessage {
 
   final case class AvailablePlayers(request: (ActorPath, Int), players: Seq[ActorRef])
 
+  final case class GameOver()
+
 }

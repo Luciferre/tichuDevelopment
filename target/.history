@@ -34,3 +34,10 @@ project ordinarynode
 project supernode
 join 127.0.0.1
 project ordinarynode
+project supernode
+join 127.0.0.1
+project ordinarynode
+project supernode
+project ordinarynode
+project supernode
+project ordinarynode

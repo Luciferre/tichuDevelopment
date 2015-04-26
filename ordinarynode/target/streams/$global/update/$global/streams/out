@@ -1,611 +1,643 @@
-[info] Updating {file:/Users/Luciferre/Downloads/tichuDevelopment/}ordinarynode...
-[debug] :: resolving dependencies :: edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1
-[debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
-[debug] 	validate = true
-[debug] 	refresh = false
-[debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[info] Resolving org.scala-lang#scala-library;2.11.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39c672d0
-[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6
-[debug] 	found org.scala-lang#scala-library;2.11.6 in sbt-chain
-[debug] 	[2.11.6] org.scala-lang#scala-library;2.11.6
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)]
-[info] Resolving edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 ...
-[debug] sbt-chain: Checking cache for: dependency: edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 {compile=[default(compile)]}
-[debug] 	found edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 in inter-project
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[info] Resolving com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT ...
-[debug] sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT {compile=[default(compile)]}
-[debug] don't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true
-[info] Resolving com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT {compile=[default(compile)]}
-[debug] don't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true
-[debug] don't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true
-[debug] 		tried /Users/Luciferre/.ivy2/local/com.typesafe.akka/akka-actor_2.11/2.4-SNAPSHOT/ivys/ivy.xml
-[debug] 	local: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
-[debug] don't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 	maven-metadata not available: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom
-[debug] 	public: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
-[debug] don't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true
-[debug] CLIENT ERROR: Not Found url=http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 	maven-metadata not available: http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom
-[debug] 	Akka Snapshot Repository: found md file for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
-[debug] 		=> http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom (2.4-SNAPSHOT)
-[debug] 	default-cache: revision in cache (not updated): com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT
-[debug] 	found com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT in sbt-chain
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)]
-[info] Resolving com.typesafe#config;1.2.1 ...
-[debug] sbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.typesafe#config;1.2.1
-[debug] 	found com.typesafe#config;1.2.1 in sbt-chain
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[info] Resolving com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT ...
-[debug] sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT {compile=[default(compile)]}
-[debug] don't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true
-[info] Resolving com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT ...
-[debug] sbt-chain-delegate: Checking cache for: dependency: com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT {compile=[default(compile)]}
-[debug] don't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true
-[debug] don't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true
-[debug] 		tried /Users/Luciferre/.ivy2/local/com.typesafe.akka/akka-remote_2.11/2.4-SNAPSHOT/ivys/ivy.xml
-[debug] 	local: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
-[debug] don't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 	maven-metadata not available: https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom
-[debug] 	public: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
-[debug] don't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true
-[debug] CLIENT ERROR: Not Found url=http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 	maven-metadata not available: http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml
-[debug] 		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom
-[debug] 	Akka Snapshot Repository: found md file for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
-[debug] 		=> http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom (2.4-SNAPSHOT)
-[debug] 	default-cache: revision in cache (not updated): com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT
-[debug] 	found com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT in sbt-chain
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)]
-[info] Resolving io.netty#netty;3.8.0.Final ...
-[debug] sbt-chain: Checking cache for: dependency: io.netty#netty;3.8.0.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final
-[debug] 	found io.netty#netty;3.8.0.Final in sbt-chain
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)]
-[info] Resolving com.google.protobuf#protobuf-java;2.5.0 ...
-[debug] sbt-chain: Checking cache for: dependency: com.google.protobuf#protobuf-java;2.5.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0
-[debug] 	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)]
-[info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: dependency: org.uncommons.maths#uncommons-maths;1.2.2a {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
-[debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [test]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [provided]
-[debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional]
-[debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile-internal]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [provided]
-[debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime-internal]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional]
-[debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [test-internal]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [test]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)]
-[debug] == resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile]
-[debug] excluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] excluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime
-[debug] == resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional]
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [provided]
-[debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [plugin]
-[debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [sources]
-[debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [docs]
-[debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [pom]
-[debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [scala-tool]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->default]
-[info] Resolving org.scala-lang#scala-compiler;2.11.6 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.6 {scala-tool=[default, optional(default)]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.6
-[debug] 	found org.scala-lang#scala-compiler;2.11.6 in sbt-chain
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->default]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->runtime]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->optional(default)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->master(*)]
-[info] Resolving org.scala-lang#scala-reflect;2.11.6 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.6
-[debug] 	found org.scala-lang#scala-reflect;2.11.6 in sbt-chain
-[debug] 	[2.11.6] org.scala-lang#scala-reflect;2.11.6
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
-[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile]
-[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->master(*)]
-[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
-[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->master(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->master(*)]
-[info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3
-[debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 in sbt-chain
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->master(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->compile]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->runtime(*)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->optional(default)]
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->master(*)]
-[info] Resolving jline#jline;2.12.1 ...
-[debug] sbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {optional=[compile(*), master(*)]}
-[debug] sbt-chain: module revision found in cache: jline#jline;2.12.1
-[debug] 	found jline#jline;2.12.1 in sbt-chain
-[debug] == resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->compile(*)]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->default]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->runtime]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->compile]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->master]
-[debug] == resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)]
-[debug] 	resolved ivy file produced in cache
-[debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT!akka-actor_2.11.jar
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT!akka-remote_2.11.jar
-[debug] 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-[debug] 	[NOT REQUIRED] io.netty#netty;3.8.0.Final!netty.jar(bundle)
-[debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(bundle)
-[debug] 	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.6!scala-compiler.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.6!scala-reflect.jar
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)
-[debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
-[debug] :: resolution report :: resolve 978ms :: artifacts dl 21ms
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 compile produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-compile.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 runtime produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-runtime.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 test produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-test.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 provided produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-provided.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 optional produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-optional.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 compile-internal produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-compile-internal.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 runtime-internal produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-runtime-internal.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 test-internal produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-test-internal.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 plugin produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-plugin.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 sources produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-sources.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 docs produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-docs.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 pom produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-pom.xml
-[debug] 	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 scala-tool produced in /Users/Luciferre/Downloads/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-scala-tool.xml
-[debug] 	resolve done (978ms resolve - 21ms download)
-[info] Done updating.
+[0m[[0minfo[0m] [0mUpdating {file:/Users/yachen/Documents/shan/tichuDevelopment/}ordinarynode...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@728c30d4[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.6[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-library;2.11.6[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m	found edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 in inter-project[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried /Users/yachen/.ivy2/local/com.typesafe.akka/akka-actor_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried /doesnotexist/repository/com.typesafe.akka/akka-actor_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried /Users/yachen/Downloads/activator-1.3.2/repository/com.typesafe.akka/akka-actor_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m	maven-metadata not available: https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m	maven-metadata not available: http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.akka/akka-actor_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.akka/akka-actor_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releasez: no ivy file found for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m	maven-metadata not available: http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0m	Akka Snapshot Repository: found md file for com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.akka.io/snapshots/com/typesafe/akka/akka-actor_2.11/2.4-SNAPSHOT/akka-actor_2.11-2.4-SNAPSHOT.pom (2.4-SNAPSHOT)[0m
+[0m[[0mdebug[0m] [0m	default-cache: revision in cache (not updated): com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.2.1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.2.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried /Users/yachen/.ivy2/local/com.typesafe.akka/akka-remote_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried /doesnotexist/repository/com.typesafe.akka/akka-remote_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-launcher-local: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried /Users/yachen/Downloads/activator-1.3.2/repository/com.typesafe.akka/akka-remote_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m	maven-metadata not available: https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m	maven-metadata not available: http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0m	typesafe-releases: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.akka/akka-remote_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.akka/akka-remote_2.11/2.4-SNAPSHOT/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releasez: no ivy file found for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0mdon't use cache for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT: changing=true[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m	maven-metadata not available: http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/maven-metadata.xml[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom[0m
+[0m[[0mdebug[0m] [0m	Akka Snapshot Repository: found md file for com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.akka.io/snapshots/com/typesafe/akka/akka-remote_2.11/2.4-SNAPSHOT/akka-remote_2.11-2.4-SNAPSHOT.pom (2.4-SNAPSHOT)[0m
+[0m[[0mdebug[0m] [0m	default-cache: revision in cache (not updated): com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving io.netty#netty;3.8.0.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.netty#netty;3.8.0.Final {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final[0m
+[0m[[0mdebug[0m] [0m	found io.netty#netty;3.8.0.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.google.protobuf#protobuf-java;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.protobuf#protobuf-java;2.5.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0[0m
+[0m[[0mdebug[0m] [0m	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.uncommons.maths#uncommons-maths;1.2.2a ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.uncommons.maths#uncommons-maths;1.2.2a {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a[0m
+[0m[[0mdebug[0m] [0m	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->edu.cmu.ece#tichu-messages_2.11;0.0.alpha1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-messages_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [plugin][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->default][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.11.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.6 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.6[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.6[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.6] org.scala-lang#scala-reflect;2.11.6[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-library;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang#scala-reflect;2.11.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-xml_2.11;1.0.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-compiler;2.11.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving jline#jline;2.12.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.12.1[0m
+[0m[[0mdebug[0m] [0m	found jline#jline;2.12.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.6->jline#jline;2.12.1 [optional->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1->org.scala-lang#scala-library;2.11.6 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.6!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.4-SNAPSHOT!akka-actor_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.11;2.4-SNAPSHOT!akka-remote_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty;3.8.0.Final!netty.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.6!scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.6!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.3!scala-parser-combinators_2.11.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 32061ms :: artifacts dl 16ms[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 compile produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 runtime produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 test produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 provided produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 optional produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 compile-internal produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 runtime-internal produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 test-internal produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 plugin produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 sources produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 docs produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 pom produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for edu.cmu.ece#tichu-ordinary-node_2.11;0.0.alpha1 scala-tool produced in /Users/yachen/Documents/shan/tichuDevelopment/ordinarynode/target/resolution-cache/reports/edu.cmu.ece-tichu-ordinary-node_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (32061ms resolve - 16ms download)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
