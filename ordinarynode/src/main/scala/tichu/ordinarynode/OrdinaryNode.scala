@@ -102,21 +102,19 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
         sortedPlayers(0) ! PlayFirst(self)
     }
     case PlayFirst(sender) =>
-      log.debug("First Player: {}", sender)
       sender ! GameStart()
-      log.debug("Playing!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
-    case GameStart() => log.debug("Phase start!")
+    case GameStart() =>
       subscribers.foreach(_ ! SpecifyHand(Array(0, 0), true))
 
-    case SendCards(cards) => log.debug("Phase end!")
+    case SendCards(cards) =>
       if (cards.length == 0)
       nextActorRef ! SendToken(receivedToken.ttl - 1, receivedToken.cumulative_hand)
       else {
         val new_cumulative_hand = receivedToken.cumulative_hand :+ cards
         nextActorRef ! SendToken(receivedToken.ttl, new_cumulative_hand)
       }
-      MultiCast(cards, allPlayers)
+      multiCast(superNode, cards, allPlayers)
 
     /*
     receive a token from another player
@@ -161,9 +159,6 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       if (sortedPlayers(i).hashCode() == self.hashCode)
         next = (i + 1) % NUM_OF_PLAYERS
     nextActorRef = sortedPlayers(next) //find the next one who should receive token ring
-    log.debug("localActor: {}", self)
-    log.debug("isLeader: {}", isLeader)
-    log.debug("nextActor: {}", nextActorRef)
 
     if (isLeader) {
       distributeCards()
@@ -188,15 +183,14 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
   def getAFullSetOfCards(): Array[CardInfo] = {
     //initialize deck
     var hand = new ArrayBuffer[CardInfo]()
-    for (i <- 0 to 12) {
+    for (i <- 1 to 13) {
       // different number
       for (j <- 0 to 3) {
         // different color
         hand += new CardInfo(i, j)
       }
     }
-    val ret = hand.toArray
-    return ret
+    hand.toArray
   }
 
   /**
@@ -220,7 +214,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     for (i <- 0 until size) {
       shuffled(i) = cards(indexAfter(i))
     }
-    return shuffled
+    shuffled
   }
 
   /**
@@ -235,7 +229,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     for (i <- n until cards.length by 4) {
       hand += cards(i)
     }
-    return hand.toArray
+    hand.toArray
   }
 
   def findFirstPlayer(cards: Array[CardInfo]): Boolean = {
@@ -243,7 +237,16 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       if(cards(i).num == 3 && cards(i).color == 3)
         return true
     }
-    return false
+    false
   }
 
+
+  /**
+   * Multicast the specified cards to other players
+   * @param cards
+   * @return
+   */
+  def multiCast(superNode: ActorRef, cards: Array[CardInfo], actors: Seq[ActorRef]): Unit ={
+    superNode ! MultiCast(cards, actors)
+  }
 }

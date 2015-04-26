@@ -121,7 +121,6 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
    */
   def specifyHand(expectedType: Array[Int], isFirst: Boolean) = {
     println("The expected card type is: " + handType(expectedType(1)))
-    println("You have the following available cards: ")
     if (expectedType(0) == 0) {
       println("You can pick any card")
     } else {
@@ -327,11 +326,11 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
      1 if hand0 > hand1
      */
     def compareHand(hand0: HandInfo, hand1: HandInfo): Int = {
-      if (hand0.handtype != hand1.handtype) return -2
+      if (hand0.handtype != hand1.handtype) -2
       else {
-        if (hand0.num > hand1.num) return 1
-        else if (hand0.num == hand1.num) return 0
-        else return -1
+        if (hand0.num > hand1.num) 1
+        else if (hand0.num == hand1.num) 0
+        else -1
       }
     }
 
@@ -339,11 +338,18 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
       def compare(a: CardInfo, b: CardInfo) = a.num compare b.num
     }
     Sorting.quickSort(hand)(CardOrdering)
-    return hand
+    hand
   }
 
+  /**
+   * Receive the token ring from last player, start my phase
+   * @param ttl
+   * @param cumulative_hand
+   * @return
+   */
   def receiveToken(ttl: Int, cumulative_hand: Array[Array[CardInfo]]) = {
     // ttl == 0 means all other players have passed. it is my turn again
+    println("Your phase start!")
     if (ttl == 0) {
       // todo: add score to my current scores, and inform the GUI of this message
       println("GREAT, all your opposites passed your hand, it's your turn again!")
@@ -362,8 +368,13 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
         specifyHand(getHandType(prev_hand), false)
 
     }
+    println("Your phase end!")
   }
-
+  /**
+   * Receive Multicast message from other players, and display their cards
+   * @param cards
+   * @return
+   */
   def receiveMulticast(cards: Array[CardInfo]): Unit ={
     if(cards.length == 0)
       println("The player passes his/her phase.")
