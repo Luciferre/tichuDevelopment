@@ -99,9 +99,13 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
     context.stop(self)
   }
 
+  /**
+   * show the current player's cards
+   * @param cards
+   */
   def showCards(cards: Array[CardInfo]): Unit = {
-    myCards = cards
-    println(">> You have " + cards.length + " cards available")
+    myCards = SortCards(cards)
+    println(">> You have " + cards.length + " cards available in hand: ")
     for (i <- 0 until cards.length) {
       println("Card #" + i + "; Number is " + cards(i).num + "\t; Color is " + colorType(cards(i).color)) //+ colorType(cards(i).color))
     }
@@ -117,13 +121,14 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
   def specifyHand(expectedType: Array[Int]) = {
     println("The expected card type is: " + handType(expectedType(1)))
     println("You have the following available cards: ")
-    showCards(myCards)
     if (expectedType(0) == 0) {
       println("You can pick any card")
     } else {
       println("The expected card number is " + expectedType(0))
     }
-    println("Please specify card")
+    showCards(myCards)
+
+    println("Please specify card: ")
     var hand = new ArrayBuffer[CardInfo]()
     var indexes = new ArrayBuffer[Int]()
     // return any type of hands, as long as it is legal
@@ -155,26 +160,30 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
           indexes += (ipt.toInt)
         }
       }
-      // check if the specified hand meets demands
-      val check = getHandType(hand.toArray)
-      // if there is no limit of card type, then any hand is OK
-      // if there is a limit of card type, you must specify the expected type
-      if ((expectedType(1) == 0 && check(1) != 0) ||
-        (check(1) != 0 && check(1) == expectedType(1) && check(0) > expectedType(0))) {
-        println("I think this hand is valid")
-        notReady = false
-      } else {
-        println("This hand is not valid, do you want to go on selecting[yes] or not[pass]?")
-        val ipt = StdIn.readLine()
-        if (ipt == "pass") {
-          // jump out of this loop
+      if(isPass == false) {
+        // check if the specified hand meets demands
+        val check = getHandType(hand.toArray)
+        // if there is no limit of card type, then any hand is OK
+        // if there is a limit of card type, you must specify the expected type
+        if ((expectedType(1) == 0 && check(1) != 0) ||
+          (check(1) != 0 && check(1) == expectedType(1) && check(0) > expectedType(0))) {
+          println("I think this hand is valid")
           notReady = false
+        } else {
+          println("This hand is not valid, do you want to go on selecting[yes] or not[pass]?")
+          val ipt = StdIn.readLine()
+          if (ipt == "pass") {
+            // jump out of this loop
+            isPass = true
+            notReady = false
+          }
         }
       }
     }
     val toSend = new ArrayBuffer[CardInfo]()
     // if the user decided to pass, return null. else return the cards specified
-    if (isPass) node ! SendCards(toSend.toArray)
+    if (isPass)
+      node ! SendCards(toSend.toArray)
     else {
       // put the indexes into a hashset
       var hs = new HashSet[Int]()
@@ -192,7 +201,7 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
         }
       }
       myCards = remaining.toArray
-      println("I have these cards remaining:")
+      println("I have these cards remaining in hand:")
       showCards(myCards)
       // convert to array, sort, and return
       node ! SendCards(toSend.toArray)
@@ -335,7 +344,7 @@ class ConsoleActor(node: ActorRef) extends Actor with ActorLogging {
 
     } else {
       // display the token first,
-      println("The cumulative hands are: ")
+      println("The cumulative hands on the table are: ")
       println(runtime.ScalaRunTime.stringOf(cumulative_hand))
 
       // the previous hand is the last entry in cumulative hand

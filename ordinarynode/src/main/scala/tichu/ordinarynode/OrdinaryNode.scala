@@ -166,6 +166,7 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
       distributeCards()
     }
   }
+
   def distributeCards() = {
     //if the ON is leader, shuffle the cards and distribute cards
     val allCards = shuffleCards(getAFullSetOfCards())
@@ -177,6 +178,10 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
 
   }
 
+  /**
+   * * this function is used by the game's initiator. the initiator will create a full set of cards by this function
+   * @return
+   */
   def getAFullSetOfCards(): Array[CardInfo] = {
     //initialize deck
     var hand = new ArrayBuffer[CardInfo]()
@@ -190,6 +195,13 @@ class OrdinaryNode(name: String) extends Actor with ActorLogging {
     val ret = hand.toArray
     return ret
   }
+
+  /**
+   * this function is used by the game's initiator. the initiator will shuffle the newly created cards by this function
+   * it takes a set of cards, returns a fully shuffled set of cards
+   * @param cards
+   * @return
+   */
 
   def shuffleCards(cards: Array[CardInfo]): Array[CardInfo] = {
     //shuffle the deck
